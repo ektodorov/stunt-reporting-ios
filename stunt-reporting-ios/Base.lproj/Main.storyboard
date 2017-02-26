@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="stunt_reporting_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLp-ik-hzf">
+                                <rect key="frame" x="16" y="20" width="79" height="30"/>
+                                <state key="normal" title="Send string"/>
+                                <connections>
+                                    <action selector="onButtonSendString:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aFU-wJ-Ysx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-2A-aPg">
+                                <rect key="frame" x="16" y="58" width="88" height="30"/>
+                                <state key="normal" title="Send Bitmap"/>
+                                <connections>
+                                    <action selector="onButtonSendBitmap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mg2-m6-MWH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAp-ot-K49">
+                                <rect key="frame" x="16" y="96" width="63" height="30"/>
+                                <state key="normal" title="Send File"/>
+                                <connections>
+                                    <action selector="onButtonSendFile:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Nt-cy-W3o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XgV-aN-i3U">
+                                <rect key="frame" x="16" y="134" width="109" height="30"/>
+                                <state key="normal" title="Send Client Info"/>
+                                <connections>
+                                    <action selector="onButtonSendClientInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uNy-Fh-RuC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtA-rJ-DQi">
+                                <rect key="frame" x="16" y="172" width="105" height="30"/>
+                                <state key="normal" title="Set Server URL"/>
+                                <connections>
+                                    <action selector="onButtonSetServerUrl:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Swb-g5-VGM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="XgV-aN-i3U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7CV-jw-om8"/>
+                            <constraint firstItem="zwX-2A-aPg" firstAttribute="top" secondItem="BLp-ik-hzf" secondAttribute="bottom" constant="8" id="9qS-ew-J8e"/>
+                            <constraint firstItem="zwX-2A-aPg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jtn-1O-ywt"/>
+                            <constraint firstItem="BtA-rJ-DQi" firstAttribute="top" secondItem="XgV-aN-i3U" secondAttribute="bottom" constant="8" id="LqL-3a-jwB"/>
+                            <constraint firstItem="BtA-rJ-DQi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="N0i-sI-7aj"/>
+                            <constraint firstItem="HAp-ot-K49" firstAttribute="top" secondItem="zwX-2A-aPg" secondAttribute="bottom" constant="8" id="RKA-Fe-xkx"/>
+                            <constraint firstItem="BLp-ik-hzf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YsW-4D-eQS"/>
+                            <constraint firstItem="XgV-aN-i3U" firstAttribute="top" secondItem="HAp-ot-K49" secondAttribute="bottom" constant="8" id="gm8-4f-emt"/>
+                            <constraint firstItem="BLp-ik-hzf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lLi-vM-aXe"/>
+                            <constraint firstItem="HAp-ot-K49" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="vHl-h4-sDx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonSendBitmap" destination="zwX-2A-aPg" id="2B7-mQ-UKW"/>
+                        <outlet property="buttonSendClientInfo" destination="XgV-aN-i3U" id="Vxi-wO-2Xf"/>
+                        <outlet property="buttonSendFile" destination="HAp-ot-K49" id="OrG-nk-PGt"/>
+                        <outlet property="buttonSendString" destination="BLp-ik-hzf" id="hwn-IZ-TQe"/>
+                        <outlet property="buttonSetServerUrl" destination="BtA-rJ-DQi" id="6wy-Tu-I97"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
