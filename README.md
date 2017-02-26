@@ -3,5 +3,5 @@ Stunt-Reporting is the client part for iOS that provides the connection to the s
 <br><br>
 <a href="https://ektodorov.github.io/stunt-reporting-server/">Description of the project</a><br><br>
 <a href="http://techzealous.blogspot.bg/2016/12/introducing-stunt-developer-analytics.html">Blog post</a><br><br>
-<a href="https://github.com/ektodorov/stunt-reporting-server">Stunt reporting server</a>
+<a href="https://github.com/ektodorov/stunt-reporting-server">Stunt reporting server</a><br>
 <a href="https://github.com/ektodorov/stunt-reporting-android">Stunt reporting Android client</a>
